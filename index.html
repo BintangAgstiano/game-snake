@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:,">
+<link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="header">
+          <div class="col-score">
+            <div class="title-score">Score</div>
+            <div class="score">6</div>
+          </div>
+          <h1>PHYTONS</h1>
+          <div class="col-time">
+            <div class="title-time">Time</div>
+            <div class="timer">0:00:14</div>
+          </div>
+        </div>
+        <canvas></canvas>
+        <input type="range" class="range"  />
+        <div class="col-btn">
+          <button class="btn-cancel">Cancel</button
+          ><button class="btn-rewind">
+            <i class="bx bx-revision"></i> Rewind
+          </button>
+        </div>
+        <div class="popup-play ">
+            <img src="daun.png" class="daun" alt="">
+            <img src="daun.png" class="daun2" alt="">
+            <img src="daun.png" class="daun3" alt="">
+            <img src="daun.png" class="daun4" alt="">
+            <img src="snake.png" alt="" class="snake">
+          <img src="logo.png" class="logo" width="500px" />
+          <div class="press">
+            PRESS
+            <div class="a">X</div>
+          </div>
+          <img class="flower1" src="flower1.png" alt="" />
+          <div class="col-volume">
+            <img src="volume.png" class="volume" alt="" />
+            <div class="line-volume active"></div>
+          </div>
+        </div>
+        <div class="popup-gameover ">
+           
+          <div class="game-over">GAME OVER</div>
+          <img src="cup.png" width="350" />
+          <div class="high-score">High Score</div>
+          <div class="numberHighScore">0</div>
+          <button class="btn-restart">Restart</button>
+        </div>
+      </div>
+    </div>
+    <audio src="relaxing-guitar-loop-v5-245859.mp3" id="audio-utama" loop></audio>
+    <audio src="click-117709.mp3" id="audio-click" ></audio>
+    <audio src="music-box-98027.mp3" id="audio-eaten" ></audio>
+    <audio src="sweet-game-over-sound-effect-230470.mp3" id="audio-game-over" ></audio>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
